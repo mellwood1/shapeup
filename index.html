@@ -8,7 +8,20 @@
 	<meta name="keywords" content="shape up, workout, diet, cardio, strength, stress">
 	<meta name="author" content="Lee Ellwood">
 
+	<!-- jQuery CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<!-- SlickNav JS file -->
+	<script src="scripts/jquery.slicknav.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#nav_menu').slicknav({ prependTo: "#mobilemenu" });
+		});
+	</script>
+
 	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
 	<link rel="stylesheet" href="styles/main.css">
 
 	<link rel="Shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -28,6 +41,7 @@
 		</div>
 	</header>
 	<!-- Navigation Bar -->
+	<nav id="mobilemenu"></nav>
 	<nav id="nav_menu">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -53,7 +67,7 @@
 		</ul>
 	</nav>
 	<main>
-		<aside>
+		<aside id="left">
 			<nav id="nav_list">
 				<h2>Additional Resources</h2>
 				<ul>
